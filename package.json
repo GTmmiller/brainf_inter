@@ -1,0 +1,14 @@
+{
+  "name": "brainf_interactive",
+  "version": "0.0.1",
+  "description": "An interactive interpreter for the BrainF langugauge",
+  "main": "index.js",
+  "author": "Steven Miller",
+  "license": "MIT",
+  "devDependencies": {
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.3.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-phantomjs-launcher": "^1.0.2"
+  }
+}
