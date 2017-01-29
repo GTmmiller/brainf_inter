@@ -78,10 +78,15 @@ describe("BrainFInterpreter", function() {
 
   describe("when an interpreter runs ROT13 Encoding", function() {
     beforeEach(function() {
-      interpreter = new BrainFInterpreter("",
+      input = "Hello World";
+      interpreter = new BrainFInterpreter("-,+[-[>>++++[>++++++++<-]<+<-[>+>+>-[>>>]<[[>+<-]>>+>]<<<<<-]]>>>[-]+>--[-[<->+++[-]]]<[++++++++++++<[>-[>+>>]>[+[<+>-]>+>>]<<<<<-]>>[<+>-]>[-[-<<[-]>>]<<[<<->>-]>>]<<[<<+>>-]]<[-]<.[-]<-,+]",
       input_callback, output_callback);
+      interpreter.execute();
     });
 
+    it("should ROT13 encode the text Hello World", function() {
+      expect(output).toEqual('Uryyb Jbeyq');
+    });
   });
 });
   

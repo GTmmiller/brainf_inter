@@ -46,7 +46,11 @@
             '+': function() { ++this.dataMemory[this.dataPointer]; },
             '-': function() { --this.dataMemory[this.dataPointer]; },
             '.': function() { this.output_callback(String.fromCharCode(this.dataMemory[this.dataPointer])); },
-            ',': function() { this.dataMemory[this.dataPointer] =  String.toCharCode(this.input_callback()); },
+            ',': function() {
+                var input = this.input_callback(); 
+                input = (typeof(input) === 'undefined') ? -1 : input.charCodeAt(0);
+                this.dataMemory[this.dataPointer] = input;  
+            },
             '[': function() {
                 // This function finds the position of a matching right square bracket.
                 // It jumps directly to the bracket's position to accomodate the instructionPointer
