@@ -39,7 +39,7 @@
         // Constants
         BrainFInterpreter.prototype.DATA_MEMORY_SIZE = 30000;
 
-        // An interpreter for BrainF***. Based on the code [wikipedia page]
+        // An interpreter for BrainF***. Based on this wikipedia page: https://en.wikipedia.org/wiki/Brainfuck
         BrainFInterpreter.prototype.INTERPRETER = {
             '>': function() { ++this.dataPointer; },
             '<': function() { --this.dataPointer; },
@@ -71,7 +71,6 @@
                             break;
                         }
                     }
-                    // TODO: Add an error when a match can't be found
                 }
             },
             ']': function() {
@@ -94,7 +93,6 @@
                             break;
                         }
                     }
-                    // TODO: Add an error when a match can't be found
                 }
             }
         };
@@ -133,5 +131,3 @@
     }
 
 }).call(this);
-
-

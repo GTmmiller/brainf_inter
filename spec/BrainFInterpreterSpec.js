@@ -89,4 +89,3 @@ describe("BrainFInterpreter", function() {
     });
   });
 });
-  
