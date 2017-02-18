@@ -16,11 +16,11 @@ With [bower](https://bower.io/) installed:
 In node:
 
 ```javascript
-# require the module
+// require the module
 var BrainFInterpreter = require(brainf_inter);
-# make an instance of an interpreter with a program
+// make an instance of an interpreter with a program
 var interpreter = new BrainFInterpreter("++>+++++[<+>-]++++++++[<++++++>-]<.");
-# execute a program
+// execute a program
 interpreter.execute();
 ```
 
