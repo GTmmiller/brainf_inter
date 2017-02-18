@@ -1,5 +1,5 @@
 // Found this trick from underscore
-var BrainFInterpreter = typeof require == 'function' ?  require('..') : window.brainfinter;
+var BrainFInterpreter = typeof require == 'function' ?  require('..') : window.brainf_inter;
 
 describe("BrainFInterpreter", function() {
   var interpreter,

@@ -2,7 +2,7 @@
   "name": "brainf_inter",
   "version": "0.0.1",
   "description": "An interpreter for the BrainF*** langugauge",
-  "main": "brainfinter.js",
+  "main": "brainf_inter.js",
   "author": "Steven Miller",
   "license": "MIT",
   "devDependencies": {

@@ -2,9 +2,9 @@
 
 (function() {
     var root = this;
-    var previous_brainfinter = root.brainfinter;
+    var previous_brainf_inter = root.brainf_inter;
 
-    var brainfinter = (function() {
+    var brainf_inter = (function() {
         // Constructor and instance variables
         function BrainFInterpreter(program, input_callback, output_callback) {
             if (program === undefined) {
@@ -32,7 +32,7 @@
 
             this.dataMemory = new Array(BrainFInterpreter.prototype.DATA_MEMORY_SIZE);
             for(var i = 0; i < this.dataMemory.length; i++) {
-                this.dataMemory[i] = 0;    
+                this.dataMemory[i] = 0;
             }
         }
 
@@ -114,20 +114,20 @@
     })();
 
     // Make sure we can avoid conflicts like jQuery
-    brainfinter.noConflict = function() {
-        root.brainfinter = previous_brainfinter;
-        return brainfinter;
+    brainf_inter.noConflict = function() {
+        root.brainf_inter = previous_brainf_inter;
+        return brainf_inter;
     };
 
     // Module export for nodejs and window object export for browser
     if(typeof exports !== 'undefined') {
         if(typeof module !== 'undefined' && module.exports) {
-            exports = module.exports = brainfinter;
+            exports = module.exports = brainf_inter;
         }
-        exports.brainfinter = brainfinter;
+        exports.brainf_inter = brainf_inter;
     }
     else {
-        root.brainfinter = brainfinter;
+        root.brainf_inter = brainf_inter;
     }
 
 }).call(this);
