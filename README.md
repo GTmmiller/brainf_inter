@@ -15,7 +15,7 @@ With [bower](https://bower.io/) installed:
 
 In node:
 
-```
+```javascript
 # require the module
 var BrainFInterpreter = require(brainf_inter);
 # make an instance of an interpreter with a program
@@ -26,7 +26,7 @@ interpreter.execute();
 
 With bower:
 
-``` 
+```javascript 
 <script type="text/javascript" src="brainf_inter.js"></script>
 
 // Somewhere in some javascript
