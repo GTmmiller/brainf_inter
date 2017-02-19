@@ -1,0 +1,21 @@
+{
+  "name": "brainf_inter",
+  "description": "An interpreter for the BrainF*** langugauge",
+  "main": "brainf_inter.js",
+  "authors": [
+    "Steven Miller"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "brainfuck",
+    "interpreter"
+  ],
+  "homepage": "https://github.com/GTmmiller/brainf_inter",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
