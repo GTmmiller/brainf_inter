@@ -47,6 +47,7 @@ Check out the spec tests in `spec/BrainFInterpreterSpec.js` for how to use the a
 ## History
 
 `0.0.1 - original version`
+`1.0.0 - updated for security issues`
 
 ## Credits
 
@@ -56,6 +57,6 @@ The [Brainfuck language article](https://en.wikipedia.org/wiki/Brainfuck) on wik
 
 ## License
 
-Copyright (c) 2016-2017 Steven Miller
+Copyright (c) 2016-2020 Steven Miller
 
 Licensed under the MIT License
