@@ -1,6 +1,6 @@
 {
   "name": "brainf_inter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An interpreter for the BrainF*** langugauge",
   "main": "brainf_inter.js",
   "repository": {
@@ -12,9 +12,9 @@
   "devDependencies": {
     "jasmine": "^3.6.1",
     "jasmine-core": "^3.6.0",
-    "karma": "^5.2.2",
+    "karma": "^6.4.4",
     "karma-jasmine": "^4.0.1",
-    "karma-phantomjs-launcher": "^1.0.2"
+    "karma-phantomjs-launcher": "^0.2.3"
   },
   "scripts": {
     "test": "jasmine && karma start --single-run"
